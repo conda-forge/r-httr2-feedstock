@@ -1,4 +1,4 @@
-{% set version = '0.2.1' %}
+{% set version = "0.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/httr2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/httr2/httr2_{{ version }}.tar.gz
-  sha256: e5e2c951bb8f4ea9340525e6a3fa3e65ee9025ad991258d549bccc4d580b797a
+  sha256: 5d1ab62541f7817112519f0f9d00d6a2555bab5b2da7f5c6d579b0c307d7f2bf
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -55,9 +55,7 @@ test:
 about:
   home: https://httr2.r-lib.org, https://github.com/r-lib/httr2
   license: MIT
-  summary: Tools for creating and modifying HTTP requests, then performing them and processing
-    the results. 'httr2' is a modern re-imagining of 'httr' that uses a pipe-based interface
-    and solves more of the problems that API wrapping packages face.
+  summary: Tools for creating and modifying HTTP requests, then performing them and processing the results. 'httr2' is a modern re-imagining of 'httr' that uses a pipe-based interface and solves more of the problems that API wrapping packages face.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
