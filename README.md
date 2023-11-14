@@ -3,11 +3,13 @@ About r-httr2-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-httr2-feedstock/blob/main/LICENSE.txt)
 
-Home: https://httr2.r-lib.org, https://github.com/r-lib/httr2
+Home: https://httr2.r-lib.org
 
 Package license: MIT
 
 Summary: Tools for creating and modifying HTTP requests, then performing them and processing the results. 'httr2' is a modern re-imagining of 'httr' that uses a pipe-based interface and solves more of the problems that API wrapping packages face.
+
+Development: https://github.com/r-lib/httr2
 
 Current build status
 ====================
@@ -95,7 +97,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
