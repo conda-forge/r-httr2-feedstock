@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/httr2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/httr2/httr2_{{ version }}.tar.gz
-  sha256: cb852d6f560c329a7dc17aa760f09a0950413513dc8abfc3facb6418b2934a49
+  sha256: 33e92d830981b33cd5e55068b500c57dbfb72329c2fce54be3163c63b217f1b2
 
 build:
   merge_build_host: true  # [win]
