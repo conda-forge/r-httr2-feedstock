@@ -1,6 +1,5 @@
 {% set version = "1.0.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-httr2
@@ -13,8 +12,7 @@ source:
   sha256: d1f8e37f74a59f4e1b3b886e5f453336ba14251e500acdccc8f4f7d2b9300048
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
